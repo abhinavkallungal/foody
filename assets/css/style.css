@@ -1,0 +1,237 @@
+:root {
+  --color-primary:#f69f27;
+  --color-accaes:#fb5973;
+  --color-secondry:#232323;
+  --color-white:#fffdf5;
+  --color-gray:#70707b;
+}
+
+.btn {
+  margin: auto 10px;
+  background-color: transparent;
+  color: var(--color-secondry);
+}
+
+.btn-theme {
+  color: var(--color-white);
+  background-color: var(--color-accaes);
+  padding: 10px 20px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.btn-theme:hover {
+  opacity: .8;
+  background-color: var(--color-secondry);
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.section .btn-theme {
+  padding: 10px 30px;
+}
+
+header .navbar .navbar-brand {
+  color: var(--color-secondry);
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+
+header .navbar .navbar-brand::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 10%;
+  width: 100%;
+  height: 15px;
+  background-color: var(--color-primary);
+  z-index: -1;
+}
+
+header .navbar .navbar-brand .fa-bars {
+  margin: auto;
+}
+
+header .navbar .collapse {
+  margin-bottom: 10px;
+}
+
+header .navbar .collapse .nav-item .nav-link {
+  color: var(--color-secondry);
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+}
+
+header .navbar .collapse .nav-item .nav-link::before {
+  content: "";
+  background-color: var(--color-secondry);
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  height: 2px;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+header .navbar .collapse .nav-item .nav-link:hover::before {
+  opacity: 1;
+  left: 0%;
+}
+
+header .navbar .collapse button svg {
+  width: 20px;
+  height: 20px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+header .navbar .collapse button svg:hover {
+  fill: var(--color-accaes);
+}
+
+@media only screen and (max-width: 991px) {
+  header .navbar .collapse {
+    margin-bottom: 25px;
+  }
+  header .navbar .d-flex {
+    margin-top: 25px;
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.banner .container .row .display-3 {
+  font-weight: 700;
+}
+
+.banner .container .row p {
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.banner .container .row img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  .banner {
+    height: auto;
+  }
+  .banner h1.display-3 {
+    font-size: 36px !important;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .banner {
+    text-align: center;
+  }
+  .banner h1.display-3 {
+    font-size: 26px !important;
+    font-weight: 400;
+  }
+}
+
+.about .img-box {
+  height: 100%;
+  width: 100%;
+}
+
+.about .img-box img {
+  width: 100%;
+}
+
+.about .img-box .small-img {
+  width: 100px;
+}
+
+.about .sub-heading {
+  color: var(--color-primary);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  display: block;
+  margin-bottom: auto;
+}
+
+.about .display-4 {
+  font-weight: 500;
+}
+
+.about p {
+  font-size: 17px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about .hotDog-img {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.about .hotDog-img img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media only screen and (max-width: 991px) {
+  .img-box .small-img {
+    width: 50px;
+  }
+  .display-4 {
+    font-size: 32px !important;
+  }
+  .hotDog-img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: -50px;
+    position: relative;
+    z-index: -1;
+  }
+  .hotDog-img img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .about {
+    text-align: center;
+  }
+  .display-4 {
+    font-size: 24px !important;
+  }
+  .sub-heading {
+    font-size: 18px;
+  }
+  .hotDog-img {
+    width: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
